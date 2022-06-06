@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #85F6B8 0%, rgba(142, 217, 235, 0.85) 99.84%);
+  background-blend-mode: darken;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.home {
+  background-color: #FFF;
+  width: 380px;
+  height: 500px;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9,
+.div10,
+.div11,
+.div12,
+.div13,
+.div14,
+.div15,
+.success {
+  background-color: #FFF;
+  width: 380px;
+  height: 480px;
+  display: none;
+}
+
+
+.titre,
+.describ {
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  color: #555555;
+}
+
+.titre {
+  margin-bottom: 30px;
+
+
+
+}
+.titleh1{
+  font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+text-align: center;
+color: #555555;
+
+}
+
+label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  color: #555555;
+}
+
+.accueil {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  margin: auto;
+  padding-top: 45px;
+}
+
+.formulaire {
+  background-color: white;
+  margin-top: 30px;
+  height: 200px;
+}
+
+.formulaire div {
+  width: 350px;
+  margin: 20px auto;
+}
+
+.input {
+  width: 100%;
+  height: 35px;
+  outline: none;
+  border: 1px solid #DDDDDD;
+  padding-left: 10px;
+}
+input[name="answer"]{
+  accent-color: green;
+  
+}
+
+.btn-radio{
+  width: 20px;
+    height: 20px;
+    border: none;
+    
+
+}
+
+
+.error {
+  font-size: 10px;
+  color: red;
+  display: none;
+}
+
+#commencer {
+  width: 130px;
+  height: 40px;
+  background: #028A3D;
+  color: #FFF;
+  font-size: 15px;
+  box-shadow: 1px 1px 1px black;
+  border: none;
+}
+
+.btn-quitter {
+  background: #EC880C;
+  width: 130px;
+  height: 35px;
+  color: #FFF;
+  font-size: 20px;
+  box-shadow: 1px 1px 1px black;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+}
+
+.suivant {
+  background: rgba(2, 138, 61, 0.42);
+  width: 130px;
+  height: 35px;
+  color: #FFF;
+  font-size: 20px;
+  box-shadow: 1px 1px 1px black;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+}
+
+.boutton {
+  display: flex;
+  justify-content: center;
+
+
+
+}
+
+#outerbar {
+
+  width: 350px;
+  height: 8px;
+  margin: auto;
+  background-color: transparent;
+  background: #DDDDDD;
+  border-radius: 10px;
+}
+
+.innerbar {
+  width: 100%;
+  height: 100%;
+  background: #028A3D;
+  border-radius: 10px;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  color: #555555;
+  margin-right: 10px;
+}
+
+.soustimer {
+  display: flex;
+}
+
+.quest {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.radio {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #DDDDDD;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.timer {
+  margin-top: 10px;
+}
+
+span {
+  margin-left: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  color: #555555;
+}
+
+.btn-accueil {
+  background: #0880D6;
+  width: 130px;
+  height: 35px;
+  color: #FFF;
+  font-size: 20px;
+  box-shadow: 1px 1px 1px black;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  display: none;
+
+}
+
+.data {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-top: 90px;
+}
+
+
+.btnn {
+  background: #0880D6;
+  width: 130px;
+  height: 35px;
+  color: #FFF;
+  font-size: 20px;
+  box-shadow: 1px 1px 1px black;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 48px;
+  color: #555555;
+}
+
+#emailSucces {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 48px;
+  color: #555555;
+}
