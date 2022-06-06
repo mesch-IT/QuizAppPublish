@@ -1,14 +1,783 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizApp</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Mesch</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, aliquid?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, veritatis?</p>
+  <div class="container">
+    <div class="home">
+      <div class="accueil">
+        <div class="titre">
+          <h1 class="titleh1">JavaScript Quiz</h1>
+        </div>
+        <div class="describ">
+          <p>Évaluez vos connaissances en JavaScript en répondant aux questions que nous avons spécialement
+            sélectionnées pour vous. C'est fun et c'est gratuit.</p>
+        </div>
+      </div>
+      <div class="formulaire">
+        <form action="" id="formAccueil">
+          <div>
+            <label for="nom">Nom</label><br>
+            <input type="text" name="nom" id="name" class="input" placeholder="Joseph">
+            <p class="error" id="nameError"></p>
+          </div>
+          <div>
+            <label for="email">E-mail</label><br>
+            <input type="text" name="email" id="email" class="input" placeholder="joseph@kinshasadigital.com">
+            <p class="error" id="emailError"></p>
+          </div>
+          <div class="boutton">
+            <input type="submit" value="Commencer" name="" id="commencer">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="elements">
+      <div class="div1">
+        <div class="accueil">
+          <div class="describ">
+            <p>Quel est le type d'un fichier en JavaScript?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>1/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value=".jsx" class="btn-radio"><span>.jsx</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value=".js" class="btn-radio"><span>.js</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value=".java" class="btn-radio"><span>.java</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value=".html" class="btn-radio"><span>.html</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant1" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div2">
+        <div class="accueil">
+          <div class="describ">
+            <p>Comment faire appelle à une fonction nommée « sum »?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>2/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="sum()" class="btn-radio"><span>sum()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="call sum()" class="btn-radio"><span>call sum()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="call function sum()" class="btn-radio"><span>call function sum()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="return sum" class="btn-radio"><span>return sum</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant2" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div3">
+        <div class="accueil">
+          <div class="describ">
+            <p>Dans quel balise HTML plaçons-nous le code JavaScript?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>3/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="js" id="input-radio" class="btn-radio"><span>js</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="javascript" class="btn-radio"><span>javascript</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="script" class="btn-radio"><span>script</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="rel" class="btn-radio"><span>rel</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant3" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div4">
+        <div class="accueil">
+          <div class="describ">
+            <p>Quelle fonction procède l’inverse de split()?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>4/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="append()" id="input-radio" class="btn-radio"><span>append()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="unite()" class="btn-radio"><span>unite()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="join()" class="btn-radio"><span>join()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="concat()" class="btn-radio"><span>concat()</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant4" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div5">
+        <div class="accueil">
+          <div class="describ">
+            <p>Quel est le bon endroit pour insérer un code JavaScript?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>5/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="head" id="input-radio" class="btn-radio"><span>la section head</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="body" class="btn-radio"><span>La section body</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="html" class="btn-radio"><span>la section html</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="script" class="btn-radio"><span>la section script</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant5" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div6">
+        <div class="accueil">
+          <div class="describ">
+            <p>Comment pouvez-vous ajouter un commentaire dans un code JavaScript?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>6/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="//Ceci est un commentaire" id="input-radio" class="btn-radio"><span>//Ceci est un
+                commentaire</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value='"Ceci est un commentaire"' class="btn-radio"><span>"Ceci est un
+                commentaire"</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="#Ceci est un commentaire" class="btn-radio"><span>#Ceci est un
+                commentaire</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="/Ceci est un commentaire|" class="btn-radio"><span>/Ceci est un
+                commentaire|</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant6" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div7">
+        <div class="accueil">
+          <div class="describ">
+            <p>Laquelle des fonctions suivantes trie les éléments d’un tableau?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>7/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="toSource()" id="input-radio" class="btn-radio"><span>toSource()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="sort()" class="btn-radio"><span>sort()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value=" toString()" class="btn-radio"><span> toString()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="unshift()" class="btn-radio"><span>unshift()</span>
+            </div>
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant7" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div8">
+        <div class="accueil">
+          <div class="describ">
+            <p> Quelle est la syntaxe correct de la boucle while?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>8/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="while (i <= 5)" id="input-radio" class="btn-radio"><span>while (i <= 5)</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="while i = 1 to 5" class="btn-radio"><span>while i = 1 to 5</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="while (i <= 5; i++)" class="btn-radio"><span>while (i <= 5; i++)</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="while (i=0; i <= 5; i++)" class="btn-radio"><span>while (i=0; i <= 5; i++)</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant8" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div9">
+        <div class="accueil">
+          <div class="describ">
+            <p>Comment déclarer un tableau « tab » de 10 éléments ?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>9/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="tab = new Array(10)" id="input-radio" class="btn-radio"><span>tab = new
+                Array(10)</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="let tab[10]" class="btn-radio"><span>let tab[10]</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="var tab = array(10)" class="btn-radio"><span>var tab = array(10)</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="const tab(10)" class="btn-radio"><span>const tab(10)</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant9" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div10">
+        <div class="accueil">
+          <div class="describ">
+            <p>Combien de paramètres peuvent être passés à une fonction?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>10/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="aucune" id="input-radio" class="btn-radio"><span>aucune</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="Autant que vous voulez" class="btn-radio"><span>Autant que vous
+                voulez</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="Un pour chaque argument" class="btn-radio"><span>Un pour chaque
+                argument</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="un" class="btn-radio"><span>Un</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant10" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div11">
+        <div class="accueil">
+          <div class="describ">
+            <p>Si str = "VWXYZ", que retourne str.charAt(3)?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>11/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="X" id="input-radio" class="btn-radio"><span>X</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="Y" class="btn-radio"><span>Y</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="Z" class="btn-radio"><span>Z</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="false" class="btn-radio"><span>false</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant11" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div12">
+        <div class="accueil">
+          <div class="describ">
+            <p>Quel événement est spécifique au clavier?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>12/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="keypress" id="input-radio" class="btn-radio"><span>keypress</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="keydown" class="btn-radio"><span>keydown</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="click" class="btn-radio"><span>click</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="onfocus" class="btn-radio"><span>onfocus</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant12" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div13">
+        <div class="accueil">
+          <div class="describ">
+            <p>Quelle est la sortie de cette ligne : String.fromCharCode(65)?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>13/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="1" id="input-radio" class="btn-radio"><span>1</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="A" class="btn-radio"><span>A</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="erreur" class="btn-radio"><span>erreur</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="false" class="btn-radio"><span>false</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant13" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div14">
+        <div class="accueil">
+          <div class="describ">
+            <p>Quelle déclaration fournit la valeur d'une fonction?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>14/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="return" id="input-radio" class="btn-radio"><span>return</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="cancel" class="btn-radio"><span>cancel</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="continue" class="btn-radio"><span>continue</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="valueOf" class="btn-radio"><span>valueOf</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button type="button" class="btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Suivant" name="" id="btn-suivant14" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="div15">
+        <div class="accueil">
+          <div class="describ">
+            <p>Quelle méthode renvoie le caractère à l’index spécifié?</p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="soustimer">
+              <p class="quest"> Question</p>
+              <div>15/15</div>
+            </div>
+            <div class="tex">60</div>
+          </div>
+          <div id="outerbar">
+            <div class="innerbar"></div>
+          </div>
+        </div>
+        <div class="formulaire">
+          <div class="form">
+            <div class="radio">
+              <input type="radio" name="answer" value="characterAt()" id="input-radio" class="btn-radio"><span>characterAt()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="getCharAt()" class="btn-radio"><span>getCharAt()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="charAt()" class="btn-radio"><span>charAt()</span>
+            </div>
+            <div class="radio">
+              <input type="radio" name="answer" value="indexof" class="btn-radio"><span>indexof</span>
+            </div>
+
+          </div>
+          <div class="btn">
+            <div class="boutton">
+              <button class="quitter btn-quitter">Quitter</button>
+            </div>
+            <div class="boutton">
+              <input type="button" class="suivant" value="Terminer" name="" id="btn-suivant15" disabled>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="success" id="succes-section">
+      <div class="data">
+        <div>
+          <h2 id="nameSucces">Nom</h2>
+        </div>
+        <div id="emailSucces">
+          <!-- <p id="emailSucces">email</p> -->
+          <p>meschakckkapanga@gmail.com</p>
+        </div>
+        <div>
+          <img src="success.png" alt="succeed">
+        </div>
+        <div>
+          <p id="printScore"></p>
+        </div>
+        <div> <input type="button" class="btnn" id="btn-accueilSucces" value="Acceuil"></div>
+      </div>
+    </div>
+    <div class="success" id="fail">
+      <div class="data">
+        <div>
+          <h2 id="nameFail">Nom</h2>
+        </div>
+        <div id="emailFail">
+          <!-- <p id="emailSucces">email</p> -->
+          <p>meschakckkapanga@gmail.com</p>
+        </div>
+        <div>
+          <img src="fail.png" alt="failled">
+        </div>
+        <div>
+          <p id="printScoreFail"></p>
+        </div>
+        <div> <input type="button" class="btnn" id="btn-accueilFail" value="Acceuil"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
