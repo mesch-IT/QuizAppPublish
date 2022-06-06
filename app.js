@@ -622,66 +622,66 @@ function hideDivs() {
   }
 }
 function enableButton1() {
-  btnSuivant1.removeAttribute('disabled')
-  btnSuivant1.style.background = 'blue'
-}
-
-function enableButton2() {
-  btnSuivant2.removeAttribute('disabled')
-  btnSuivant2.style.background = 'blue'
-}
-function enableButton3() {
-  btnSuivant3.removeAttribute('disabled')
-  btnSuivant3.style.background = 'blue'
-}
-function enableButton4() {
-  btnSuivant4.removeAttribute('disabled')
-  btnSuivant4.style.background = 'blue'
-}
-function enableButton5() {
-  btnSuivant5.removeAttribute('disabled')
-  btnSuivant5.style.background = 'blue'
-}
-function enableButton6() {
-  btnSuivant6.removeAttribute('disabled')
-  btnSuivant6.style.background = 'blue'
-}
-function enableButton7() {
-  btnSuivant7.removeAttribute('disabled')
-  btnSuivant7.style.background = 'blue'
-}
-function enableButton8() {
-  btnSuivant8.removeAttribute('disabled')
-  btnSuivant8.style.background = 'blue'
-}
-function enableButton9() {
-  btnSuivant9.removeAttribute('disabled')
-  btnSuivant9.style.background = 'blue'
-}
-function enableButton10() {
-  btnSuivant10.removeAttribute('disabled')
-  btnSuivant10.style.background = 'blue'
-}
-function enableButton11() {
-  btnSuivant11.removeAttribute('disabled')
-  btnSuivant11.style.background = 'blue'
-}
-function enableButton12() {
-  btnSuivant12.removeAttribute('disabled')
-  btnSuivant12.style.background = 'blue'
-}
-function enableButton13() {
-  btnSuivant13.removeAttribute('disabled')
-  btnSuivant13.style.background = 'blue'
-}
-function enableButton14() {
-  btnSuivant14.removeAttribute('disabled')
-  btnSuivant14.style.background = 'blue'
-}
-function enableButton15() {
-  btnSuivant15.removeAttribute('disabled')
-  btnSuivant15.style.background = 'blue'
-}
+    btnSuivant1.removeAttribute('disabled')
+    btnSuivant1.style.background = 'green'
+  }
+  
+  function enableButton2() {
+    btnSuivant2.removeAttribute('disabled')
+    btnSuivant2.style.background = 'green'
+  }
+  function enableButton3() {
+    btnSuivant3.removeAttribute('disabled')
+    btnSuivant3.style.background = 'green'
+  }
+  function enableButton4() {
+    btnSuivant4.removeAttribute('disabled')
+    btnSuivant4.style.background = 'green'
+  }
+  function enableButton5() {
+    btnSuivant5.removeAttribute('disabled')
+    btnSuivant5.style.background = 'green'
+  }
+  function enableButton6() {
+    btnSuivant6.removeAttribute('disabled')
+    btnSuivant6.style.background = 'green'
+  }
+  function enableButton7() {
+    btnSuivant7.removeAttribute('disabled')
+    btnSuivant7.style.background = 'green'
+  }
+  function enableButton8() {
+    btnSuivant8.removeAttribute('disabled')
+    btnSuivant8.style.background = 'green'
+  }
+  function enableButton9() {
+    btnSuivant9.removeAttribute('disabled')
+    btnSuivant9.style.background = 'green'
+  }
+  function enableButton10() {
+    btnSuivant10.removeAttribute('disabled')
+    btnSuivant10.style.background = 'green'
+  }
+  function enableButton11() {
+    btnSuivant11.removeAttribute('disabled')
+    btnSuivant11.style.background = 'green'
+  }
+  function enableButton12() {
+    btnSuivant12.removeAttribute('disabled')
+    btnSuivant12.style.background = 'green'
+  }
+  function enableButton13() {
+    btnSuivant13.removeAttribute('disabled')
+    btnSuivant13.style.background = 'green'
+  }
+  function enableButton14() {
+    btnSuivant14.removeAttribute('disabled')
+    btnSuivant14.style.background = 'green'
+  }
+  function enableButton15() {
+    btnSuivant15.removeAttribute('disabled')
+    btnSuivant15.style.background = 'green'
+  }
 function acceuilSucces() {
   document.location.reload(true)
 }
